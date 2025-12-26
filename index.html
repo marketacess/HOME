@@ -2,22 +2,23 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Empresa • Tecnologia & Inovação</title>
+<title>Paulo Luciano de Oliveira Carlos | Advocacia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Site institucional moderno, tecnológico e responsivo.">
+<meta name="description" content="Sociedade Individual de Advocacia em Lavras/MG. Atuação jurídica com ética, tecnologia e segurança.">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#0b0f19;
-  --card:#11172a;
-  --primary:#4f8cff;
-  --text:#eaeaf0;
-  --muted:#9aa4bf;
+  --bg:#0c0f16;
+  --card:#121826;
+  --primary:#2d6cdf;
+  --text:#f1f3f8;
+  --muted:#a3acc2;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+*{margin:0;padding:0;box-sizing:border-box}
+
 body{
   font-family:'Inter',sans-serif;
   background:var(--bg);
@@ -28,8 +29,8 @@ body{
 header{
   min-height:100vh;
   background:
-    linear-gradient(to bottom,rgba(11,15,25,.8),rgba(11,15,25,.95)),
-    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    linear-gradient(to bottom,rgba(12,15,22,.85),rgba(12,15,22,.95)),
+    url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1600&q=80");
   background-size:cover;
   background-position:center;
   display:flex;
@@ -58,11 +59,11 @@ nav a{
 }
 
 .hero-content{
-  max-width:600px;
+  max-width:650px;
 }
 
 .hero h1{
-  font-size:3rem;
+  font-size:2.8rem;
   font-weight:800;
   margin-bottom:20px;
 }
@@ -87,9 +88,14 @@ section{
   margin:auto;
 }
 
+h2{
+  font-size:2.2rem;
+  margin-bottom:20px;
+}
+
 .cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:30px;
 }
 
@@ -101,23 +107,12 @@ section{
 }
 .card:hover{transform:translateY(-6px)}
 
-.card img{
-  width:100%;
-  border-radius:10px;
-  margin-bottom:15px;
-}
-
-h2{
-  font-size:2.2rem;
-  margin-bottom:20px;
-}
-
 footer{
-  background:#070b14;
+  background:#070b10;
   padding:40px;
   text-align:center;
-  font-size:14px;
   color:var(--muted);
+  font-size:14px;
 }
 
 .cookie{
@@ -125,24 +120,24 @@ footer{
   bottom:20px;
   left:20px;
   right:20px;
-  background:#11172a;
+  background:var(--card);
   padding:20px;
   border-radius:10px;
   display:none;
 }
 
 .cookie button{
-  margin-left:10px;
-  padding:8px 16px;
-  border:none;
   background:var(--primary);
+  border:none;
   color:#fff;
+  padding:8px 16px;
+  margin-left:10px;
   border-radius:6px;
   cursor:pointer;
 }
 
 @media(max-width:768px){
-  .hero h1{font-size:2.2rem}
+  .hero h1{font-size:2.1rem}
 }
 </style>
 </head>
@@ -151,10 +146,10 @@ footer{
 
 <header>
   <nav>
-    <strong>LOGO</strong>
+    <strong>PL Advocacia</strong>
     <div>
       <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
+      <a href="#institucional">Institucional</a>
       <a href="#privacidade">Privacidade</a>
       <a href="#cookies">Cookies</a>
       <a href="#contato">Contato</a>
@@ -163,38 +158,47 @@ footer{
 
   <div class="hero">
     <div class="hero-content">
-      <h1>Tecnologia que impulsiona negócios</h1>
-      <p>Soluções digitais modernas, seguras e preparadas para o futuro.</p>
-      <a href="#servicos" class="btn">Conhecer soluções</a>
+      <h1>Advocacia moderna, segura e estratégica</h1>
+      <p>
+        Sociedade Individual de Advocacia com atuação ética,
+        transparência e uso de tecnologia jurídica.
+      </p>
+      <a href="#contato" class="btn">Entrar em contato</a>
     </div>
   </div>
 </header>
 
 <section id="sobre">
-  <h2>Sobre a Empresa</h2>
+  <h2>Sobre o Escritório</h2>
   <p>
-    Este é um site institucional moderno. Substitua este texto pelas
-    informações reais da empresa, missão, visão e dados legais.
+    <strong>Paulo Luciano de Oliveira Carlos Sociedade Individual de Advocacia</strong>,
+    fundada em 09/03/2010, atua de forma personalizada, oferecendo soluções jurídicas
+    com responsabilidade, sigilo e comprometimento.
   </p>
 </section>
 
-<section id="servicos">
-  <h2>Serviços</h2>
+<section id="institucional">
+  <h2>Informações Institucionais</h2>
   <div class="cards">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80">
-      <h3>Desenvolvimento Web</h3>
-      <p>Sites rápidos, seguros e responsivos.</p>
+      <p><strong>CNPJ:</strong> 23.531.427/0001-11</p>
+      <p><strong>Natureza Jurídica:</strong> Sociedade Unipessoal de Advocacia</p>
+      <p><strong>Situação:</strong> Ativa</p>
+      <p><strong>Capital Social:</strong> R$ 10.000,00</p>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80">
-      <h3>Soluções Digitais</h3>
-      <p>Automação e sistemas sob medida.</p>
+      <p><strong>Simples Nacional:</strong> Optante</p>
+      <p><strong>Desde:</strong> 01/01/2016</p>
+      <p><strong>Porte:</strong> Sem enquadramento</p>
+      <p><strong>Tipo:</strong> Matriz</p>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80">
-      <h3>Segurança & Dados</h3>
-      <p>Proteção e conformidade com LGPD.</p>
+      <p><strong>Endereço:</strong></p>
+      <p>
+        Av. Padre Dehon, 260 – Sala 307<br>
+        Centro – Lavras/MG<br>
+        CEP: 37200-000
+      </p>
     </div>
   </div>
 </section>
@@ -202,43 +206,46 @@ footer{
 <section id="privacidade">
   <h2>Política de Privacidade</h2>
   <p>
-    Os dados coletados são utilizados apenas para funcionamento do site,
-    comunicação e melhoria da experiência do usuário.
+    Este site respeita a Lei Geral de Proteção de Dados (LGPD).
+    Informações pessoais são utilizadas apenas para contato
+    profissional e nunca são compartilhadas sem consentimento.
   </p>
 </section>
 
 <section id="cookies">
   <h2>Política de Cookies</h2>
   <p>
-    Utilizamos cookies para análise de tráfego e personalização de conteúdo.
+    Utilizamos cookies estritamente necessários para funcionamento,
+    segurança e melhoria da experiência do usuário.
   </p>
 </section>
 
 <section id="contato">
   <h2>Contato</h2>
-  <p>Email: contato@empresa.com</p>
-  <p>Telefone: (00) 0000-0000</p>
+  <p><strong>E-mail:</strong> contato@pauloluciano.adv.br</p>
+  <p><strong>Telefone / WhatsApp:</strong> (35) 99108-3833</p>
+  <p><strong>Telefone:</strong> (35) 3821-5146</p>
 </section>
 
 <footer>
-  © 2025 • Nome da Empresa • Todos os direitos reservados
+  © 2025 – Paulo Luciano de Oliveira Carlos Sociedade Individual de Advocacia<br>
+  Todos os direitos reservados
 </footer>
 
 <div class="cookie" id="cookieBox">
-  Este site utiliza cookies para melhorar sua experiência.
+  Este site utiliza cookies para garantir a melhor experiência.
   <button onclick="aceitar()">Aceitar</button>
 </div>
 
 <script>
 function aceitar(){
-  localStorage.setItem("cookie","ok");
+  localStorage.setItem("cookiesAceitos","sim");
   document.getElementById("cookieBox").style.display="none";
 }
-if(!localStorage.getItem("cookie")){
+if(!localStorage.getItem("cookiesAceitos")){
   document.getElementById("cookieBox").style.display="block";
 }
 </script>
 
 </body>
 </html>
-
