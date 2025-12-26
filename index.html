@@ -1,127 +1,244 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Escritório de advocacia de Paulo Luciano de Oliveira Carlos. Atendimento jurídico especializado e eficiente.">
-    <title>Paulo Luciano de Oliveira Carlos | Sociedade Individual de Advocacia</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2e3a87;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin: 0 5px;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        section {
-            padding: 20px;
-        }
-        .content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        footer {
-            background-color: #2e3a87;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-        .contact-info, .address, .legal-info {
-            margin-bottom: 20px;
-        }
-        .contact-info p, .address p, .legal-info p {
-            margin: 5px 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Empresa • Tecnologia & Inovação</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Site institucional moderno, tecnológico e responsivo.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0b0f19;
+  --card:#11172a;
+  --primary:#4f8cff;
+  --text:#eaeaf0;
+  --muted:#9aa4bf;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+header{
+  min-height:100vh;
+  background:
+    linear-gradient(to bottom,rgba(11,15,25,.8),rgba(11,15,25,.95)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+}
+
+nav a{
+  color:var(--text);
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.hero{
+  flex:1;
+  display:flex;
+  align-items:center;
+  padding:40px;
+}
+
+.hero-content{
+  max-width:600px;
+}
+
+.hero h1{
+  font-size:3rem;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.hero p{
+  color:var(--muted);
+  margin-bottom:30px;
+}
+
+.btn{
+  background:var(--primary);
+  color:#fff;
+  padding:14px 28px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+section{
+  padding:80px 40px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:var(--card);
+  padding:30px;
+  border-radius:12px;
+  transition:.3s;
+}
+.card:hover{transform:translateY(-6px)}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+h2{
+  font-size:2.2rem;
+  margin-bottom:20px;
+}
+
+footer{
+  background:#070b14;
+  padding:40px;
+  text-align:center;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.cookie{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  right:20px;
+  background:#11172a;
+  padding:20px;
+  border-radius:10px;
+  display:none;
+}
+
+.cookie button{
+  margin-left:10px;
+  padding:8px 16px;
+  border:none;
+  background:var(--primary);
+  color:#fff;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:2.2rem}
+}
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Paulo Luciano de Oliveira Carlos | Sociedade Individual de Advocacia</h1>
-        <p>Assessoria Jurídica de Qualidade</p>
-    </header>
 
-    <nav>
-        <a href="#contatos">Contatos</a>
-        <a href="#endereco">Endereço</a>
-        <a href="#politicas">Políticas</a>
-        <a href="#formulario">Contato</a>
-    </nav>
+<header>
+  <nav>
+    <strong>LOGO</strong>
+    <div>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#privacidade">Privacidade</a>
+      <a href="#cookies">Cookies</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
 
-    <section class="content">
-        <div id="contatos" class="contact-info">
-            <h2>Informações de Contato</h2>
-            <p><strong>Email:</strong> <a href="mailto:contato@pauloluciano.adv.br">contato@pauloluciano.adv.br</a></p>
-            <p><strong>Telefone (Whatsapp):</strong> <a href="tel:+5535991083833">(35) 99108-3833</a></p>
-            <p><strong>Telefone:</strong> <a href="tel:+553538215146">(35) 3821-5146</a></p>
-        </div>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Tecnologia que impulsiona negócios</h1>
+      <p>Soluções digitais modernas, seguras e preparadas para o futuro.</p>
+      <a href="#servicos" class="btn">Conhecer soluções</a>
+    </div>
+  </div>
+</header>
 
-        <div id="endereco" class="address">
-            <h2>Endereço</h2>
-            <p><strong>Logradouro:</strong> Avenida Padre Dehon, 260</p>
-            <p><strong>Complemento:</strong> Sala 307</p>
-            <p><strong>Bairro:</strong> Centro</p>
-            <p><strong>CEP:</strong> 37200-000</p>
-            <p><strong>Município:</strong> Lavras</p>
-            <p><strong>Estado:</strong> Minas Gerais</p>
-        </div>
+<section id="sobre">
+  <h2>Sobre a Empresa</h2>
+  <p>
+    Este é um site institucional moderno. Substitua este texto pelas
+    informações reais da empresa, missão, visão e dados legais.
+  </p>
+</section>
 
-        <div id="politicas" class="legal-info">
-            <h2>Políticas de Privacidade e Cookies</h2>
-            <p>Este site respeita a sua privacidade e utiliza cookies para melhorar a experiência do usuário. Ao continuar navegando, você concorda com nossa Política de Privacidade e uso de cookies.</p>
-            <p><a href="politica-privacidade.html">Leia nossa Política de Privacidade</a></p>
-            <p><a href="politica-cookies.html">Leia nossa Política de Cookies</a></p>
-        </div>
+<section id="servicos">
+  <h2>Serviços</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80">
+      <h3>Desenvolvimento Web</h3>
+      <p>Sites rápidos, seguros e responsivos.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80">
+      <h3>Soluções Digitais</h3>
+      <p>Automação e sistemas sob medida.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=800&q=80">
+      <h3>Segurança & Dados</h3>
+      <p>Proteção e conformidade com LGPD.</p>
+    </div>
+  </div>
+</section>
 
-        <div id="formulario" class="contact-form">
-            <h2>Formulário de Contato</h2>
-            <form action="mailto:contato@pauloluciano.adv.br" method="POST" enctype="text/plain">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br><br>
+<section id="privacidade">
+  <h2>Política de Privacidade</h2>
+  <p>
+    Os dados coletados são utilizados apenas para funcionamento do site,
+    comunicação e melhoria da experiência do usuário.
+  </p>
+</section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+<section id="cookies">
+  <h2>Política de Cookies</h2>
+  <p>
+    Utilizamos cookies para análise de tráfego e personalização de conteúdo.
+  </p>
+</section>
 
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+<section id="contato">
+  <h2>Contato</h2>
+  <p>Email: contato@empresa.com</p>
+  <p>Telefone: (00) 0000-0000</p>
+</section>
 
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-    </section>
+<footer>
+  © 2025 • Nome da Empresa • Todos os direitos reservados
+</footer>
 
-    <footer>
-        <p>&copy; 2025 Paulo Luciano de Oliveira Carlos | Sociedade Individual de Advocacia</p>
-        <p><a href="#contatos">Voltar ao topo</a></p>
-    </footer>
+<div class="cookie" id="cookieBox">
+  Este site utiliza cookies para melhorar sua experiência.
+  <button onclick="aceitar()">Aceitar</button>
+</div>
+
+<script>
+function aceitar(){
+  localStorage.setItem("cookie","ok");
+  document.getElementById("cookieBox").style.display="none";
+}
+if(!localStorage.getItem("cookie")){
+  document.getElementById("cookieBox").style.display="block";
+}
+</script>
+
 </body>
 </html>
+
